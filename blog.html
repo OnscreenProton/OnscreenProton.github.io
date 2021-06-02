@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+output: 
+  html_document:
+     css: blog.css
+---
+<div class="center">
+    <pre class="rainbow ascii">
+    ________  ___       ________  ________     
+    |\   __  \|\  \     |\   __  \|\   ____\    
+    \ \  \|\ /\ \  \    \ \  \|\  \ \  \___|    
+     \ \   __  \ \  \    \ \  \\\  \ \  \  ___  
+      \ \  \|\  \ \  \____\ \  \\\  \ \  \|\  \ 
+       \ \_______\ \_______\ \_______\ \_______\
+        \|_______|\|_______|\|_______|\|_______|
+    </pre>
+    <ul class="rainbow">
+        {% for post in site.posts %}
+          <li>
+            <h2><a class="rainbow" href="{{ post.url }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+</div>
