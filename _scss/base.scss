@@ -1,0 +1,27 @@
+:root {
+    --bg: #101010;
+    --bg-lighter: #202020;
+    
+    --text: #DDDDDD;
+    --text-dim: #A0A0A0;
+    --text-dark: #202020;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: clamp(60%, 2vw, 100%);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+
+    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
+}
+
+.translationerror {
+    color: blue !important;
+    background-color: red !important;
+    text-shadow: none !important;
+}

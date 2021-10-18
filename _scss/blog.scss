@@ -1,0 +1,44 @@
+#section-header {
+    display: grid;
+    place-content: center;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    #header {
+    position: relative;
+    
+    place-self: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: min-content;
+
+    background-image: linear-gradient(90deg, 
+        #FF5555,
+        #FFFF55,
+        #55FF55,
+        #55FFFF,
+        #5555FF,
+        #FF55FF,
+        #FF5555
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    text-shadow: 0 0 .25em rgba(255, 255, 255, 0.5);
+
+    animation: rainbow-text 5s linear infinite,
+        logo-in 1.5 cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+    }
+}
+
+li, h2 a {
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+h2 a:hover {
+    transition: 0.5s;
+    color: #ffffff;
+}

@@ -1,26 +1,29 @@
 ---
 layout: default
 title: Blog
-output: 
-  html_document:
-     css: blog.css
 ---
-<div class="center">
-    <pre class="rainbow ascii">
-     ________  ___       ________  ________     
-    |\   __  \|\  \     |\   __  \|\   ____\    
-    \ \  \|\ /\ \  \    \ \  \|\  \ \  \___|    
-     \ \   __  \ \  \    \ \  \\\  \ \  \  ___  
-      \ \  \|\  \ \  \____\ \  \\\  \ \  \|\  \ 
-       \ \_______\ \_______\ \_______\ \_______\
-        \|_______|\|_______|\|_______|\|_______|
-    </pre>
-    <ul class="rainbow">
-        {% for post in site.posts %}
-          <li>
-            <h2><a class="rainbow" href="{{ post.url }}">{{ post.title }}</a></h2>
-            {{ post.excerpt }}
-          </li>
-        {% endfor %}
-      </ul>
-</div>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div id="section-header">
+            <pre id="header">
+    ____  __           
+   / __ )/ /___  ____ _
+  / __  / / __ \/ __ `/
+ / /_/ / / /_/ / /_/ / 
+/_____/_/\____/\__, /  
+              /____/   
+            </pre>
+            <ul>
+                {% for post in site.posts %}
+                  <li>
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    {{ post.excerpt }}
+                  </li>
+                {% endfor %}
+              </ul>
+        </div>
+    </body>
+</html>
