@@ -16,7 +16,7 @@ jobs:
       - name: Compile CSS from SCSS
         uses: gha-utilities/sass-build@v0.4.7
         with:
-          source: /main.scss
+          source: main.scss
           destination: /tmp/onscreenproton.github.io/assets/css/main.css
       
       - name: Move CSS to dest. dir
