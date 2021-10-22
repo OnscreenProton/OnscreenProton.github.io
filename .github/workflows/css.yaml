@@ -28,3 +28,16 @@ jobs:
       
       - name: Move CSS to dest. dir
         run: mv /tmp/onscreenproton.github.io/assets/css/main.css compiled/
+
+      - name: Commit changes
+        run: |
+          git config --local user.email 'action@github.com'
+          git config --local user.name 'GitHub Action'
+          git add comiled/*
+          git commit -m 'Updates compiled CSS files'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
