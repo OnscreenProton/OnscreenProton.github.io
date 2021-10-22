@@ -1,19 +1,19 @@
-#links p, #contact h1, #contact li {
+#links p, #contact-grid h1, #contact-grid li {
     text-align: center;
     margin: 4px;
 }
 
-#links p a, #contact li a {
+#links p a, #contact-grid li a {
     text-decoration: none;
     color: #cdcdcd;
     font-size: 24px;
 }
 
-#links p a:hover, #contact li a:hover {
+#links p a:hover, #contact-grid li a:hover {
     transition: 0.5s;
     color: #ffffff;
 }
 
-#contact h1 {
+#contact-grid h1 {
     color: #e4e4e4;
 }
