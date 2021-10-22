@@ -10,6 +10,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: src-pages
+            fetch-depth: 10
+            submodules: true
+            
       - name: Make destination directory for compiled CSS
         run: mkdir -vp /tmp/onscreenproton.github.io/assets/css
 
