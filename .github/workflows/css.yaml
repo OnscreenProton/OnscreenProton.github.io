@@ -27,4 +27,4 @@ jobs:
           destination: /tmp/onscreenproton.github.io/assets/css/main.css
       
       - name: Move CSS to dest. dir
-        run: mv /tmp/onscreenproton.github.io/assets/css/main.css compiled/
+        run: mv /tmp/onscreenproton.github.io/assets/css/main.css ./compiled/
