@@ -6,12 +6,18 @@
 
     p a {
         text-decoration: none;
+        color: #cdcdcd;
+        font-size: 24px;
         :hover {
             transition: 0.5s;
             color: #ffffff;
         }
     }
-    h1 {
-        color: #e4e4e4;
-    }
+}
+
+.contact-header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #e4e4e4;
 }
