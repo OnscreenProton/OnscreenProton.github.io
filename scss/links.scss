@@ -1,24 +1,19 @@
-#links, #contact-grid {
-    display:grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, lfr);
-}
-#links p, #contact-grid h1, #contact-grid li {
+#link-buttons, #contact-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 4px;
-}
+    color:#cdcdcd;
 
-#links p a, #contact-grid li a {
-    text-decoration: none;
-    color: #cdcdcd;
-    font-size: 24px;
-}
-
-#links p a:hover, #contact-grid li a:hover {
-    transition: 0.5s;
-    color: #ffffff;
-}
-
-#contact-grid h1 {
-    color: #e4e4e4;
+    p, li {
+        font-size: 24px;
+        text-decoration: none;
+        :hover {
+            transition: 0.5s;
+            color: #ffffff;
+        }
+    }
+    h1 {
+        color: #e4e4e4;
+    }
 }
