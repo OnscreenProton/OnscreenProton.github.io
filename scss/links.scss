@@ -1,6 +1,7 @@
-#links {
+#links, #contact-grid {
     display:grid;
     gap: 10px;
+    grid-template-columns: repeat(3, lfr);
 }
 #links p, #contact-grid h1, #contact-grid li {
     text-align: center;
