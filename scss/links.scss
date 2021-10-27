@@ -1,16 +1,19 @@
-#link-buttons > *, #contact-buttons > * {
+#link-buttons, #contact-buttons {
     align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
-    color:#cdcdcd;
 
-    p, li {
+    p {
+        color: #cdcdcd;
         font-size: 24px;
-        text-decoration: none;
-        :hover {
-            transition: 0.5s;
-            color: #ffffff;
+        padding: 10px;
+        a {
+            text-decoration: none;
+            :hover {
+                transition: 0.5s;
+                color: #ffffff;
+            }
         }
     }
     h1 {
