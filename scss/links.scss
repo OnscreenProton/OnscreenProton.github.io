@@ -4,16 +4,11 @@
     justify-content: center;
     text-align: center;
 
-    p {
-        color: #cdcdcd;
-        font-size: 24px;
-        padding: 10px;
-        a {
-            text-decoration: none;
-            :hover {
-                transition: 0.5s;
-                color: #ffffff;
-            }
+    p a {
+        text-decoration: none;
+        :hover {
+            transition: 0.5s;
+            color: #ffffff;
         }
     }
     h1 {
