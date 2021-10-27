@@ -8,10 +8,12 @@
         text-decoration: none;
         color: #cdcdcd;
         font-size: 24px;
-        :hover {
-            transition: 0.5s;
-            color: #ffffff;
-        }
+        padding: 10px;
+    }
+    
+    p a:hover {
+        transition: 0.5s;
+        color: #ffffff;
     }
 }
 
