@@ -1,5 +1,5 @@
 baseURL: "https://onscreenproton.github.io/"
-title: Onscreenproton\'s site
+title: Onscreenproton
 paginate: 5
 theme: PaperMod
 
@@ -7,15 +7,22 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Onscreenproton\'s site
-  description: "Onscreenproton\'s blog, links, etc."
+  title: Onscreenproton's site
+  description: "Onscreenproton's blog, links, etc."
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
@@ -26,28 +33,29 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["twitter", "reddit"]
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: true
+  tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "static/favicon.ico"
+    favicon16x16: "static/favicon-192x192.png"
+    favicon32x32: "static/favicon-32x32.png"
+    apple_touch_icon: "static/apple-touch-icon.png"
+    #safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Home"
@@ -57,7 +65,14 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: >
+        Welcome to my blog!
+
+        - I'm known as OnscreenProton on most places online.
+
+        - I don't know a ton about programming, but I often fiddle around in different languages for little projects.
+
+        - Other than programming, I like to play video games including: Minecraft, TF2, TF|2, Rust, CS:GO (hopefully CS2), Satisfactory, ROR2, Ultrakill, DRG, Apex Legends, osu!, some other games too.
 
   socialIcons:
     - name: twitter
@@ -66,6 +81,14 @@ params:
       url: "https://reddit.com/u/onscreenproton"
     - name: github
       url: "https://github.com/onscreenproton"
+    - name: discord
+      url: "https://discord.com/users/486714853944459295"
+    - name: matrix
+      url: "https://matrix.to/#/@onscreenproton:kde.org"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UC3Eo3f-1YL_4FCEe4FNz00A"
+    - name: Rss
+      url: "index.xml"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -73,7 +96,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/onscreenproton/onscreenproton.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -87,19 +110,25 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+  markup:
+    highlight:
+      codeFences: true
+      guessSyntax: true
+      lineNos: true
+      style: monokai
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: archives
+      name: Archives
+      url: /archives/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

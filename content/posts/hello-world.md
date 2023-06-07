@@ -1,9 +1,13 @@
 ---
 title: "Hello World"
-date: 2023-05-28T17:05:38-07:00
-draft: true
+date: 2023-06-06
+description: "Inital post on this blog"
 ---
 
-## Introduction
+## Intro
 
-Hello World!!!
+This is just a hello world post on this, I hope that this stays actively maintained by me but it probaly won't. I rebooted this for no reason other than I felt like it. I'm not really sure what I'll put here, but I guess I'll find out later. As I wrote in my intro thing for this site, I don't really know a ton about programming at all, but maybe I'll have motivation to learn more if I find a project I want to work on.
+
+## Misc.
+
+If you are going to contact me, I'm not really active on any platform other than Discord, so that would be perfered.
