@@ -51,10 +51,10 @@ params:
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "static/favicon.ico"
-    favicon16x16: "static/favicon-192x192.png"
-    favicon32x32: "static/favicon-32x32.png"
-    apple_touch_icon: "static/apple-touch-icon.png"
+    #favicon: "static/favicon.ico"
+    #favicon16x16: "static/favicon-192x192.png"
+    #favicon32x32: "static/favicon-32x32.png"
+    #apple_touch_icon: "static/apple-touch-icon.png"
     #safari_pinned_tab: "<link / abs url>"
 
   label:
