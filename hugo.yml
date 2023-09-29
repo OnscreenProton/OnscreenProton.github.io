@@ -79,6 +79,8 @@ params:
       url: "https://twitter.com/onscreenproton"
     - name: reddit
       url: "https://reddit.com/u/onscreenproton"
+    - name: mastodon
+      url: "https://wetdry.world/@onscreenproton"
     - name: github
       url: "https://github.com/onscreenproton"
     - name: discord
