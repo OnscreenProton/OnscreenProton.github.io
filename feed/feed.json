@@ -1,0 +1,30 @@
+{
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "OnscreenProton",
+	"language": "en",
+	"home_page_url": "https://onscreenproton.github.io/",
+	"feed_url": "https://onscreenproton.github.io/feed/feed.json",
+	"description": "My personal site and blog",
+	"author": {
+		"name": "OnscreenProton",
+		"url": "https://onscreenproton.github.io"
+	},
+	"items": [
+		{
+			"id": "https://onscreenproton.github.io/blog/secondpost/",
+			"url": "https://onscreenproton.github.io/blog/secondpost/",
+			"title": "October Update",
+			"content_html": "<h1>Update</h1>\n<p>I am currently alive and well and have been working on upgrading on my vps setup. Over the past few months I've found a few new pieces of software such as <a href=\"https://github.com/zadam/trilium\">trilium notes</a> and <a href=\"https://github.com/usememos/memos\">memos</a> that seem pretty cool. I've also set foot into the world of federated social media with new accounts on <a href=\"https://wetdry.world/@onscreenproton\">Mastodon</a> and <a href=\"https://leathallava.land/@onscreenproton\">lavafish</a>. Both of these seem pretty interesting and I hope to stay active on both.</p>\n<p>That's pretty much it for now and I hope to have something else to put here sometime soon. I'm just thinking about what else I should put here</p>\n",
+			"date_published": "2023-09-04T00:00:00Z"
+		}
+		,
+		{
+			"id": "https://onscreenproton.github.io/blog/firstpost/",
+			"url": "https://onscreenproton.github.io/blog/firstpost/",
+			"title": "Hello World",
+			"content_html": "<h2>Intro</h2>\n<p>This is just a hello world post on this, I hope that this stays actively maintained by me but it probaly won't. I rebooted this for no reason other than I felt like it. I'm not really sure what I'll put here, but I guess I'll find out later. As I wrote in my intro thing for this site, I don't really know a ton about programming at all, but maybe I'll have motivation to learn more if I find a project I want to work on.</p>\n<h2>Misc.</h2>\n<p>If you are going to contact me, I'm not really active on any platform other than Discord, so that would be perfered.</p>\n",
+			"date_published": "2023-06-06T00:00:00Z"
+		}
+		
+	]
+}
