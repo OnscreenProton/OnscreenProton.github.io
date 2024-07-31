@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
+const markdownItCheckbox = require("markdown-it-task-checkbox");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -80,18 +80,16 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Customize Markdown library settings:
-	/*eleventyConfig.amendLibrary("md", mdLib => {
-		mdLib.use(markdownItAnchor, {
-			permalink: markdownItAnchor.permalink.ariaHidden({
-				placement: "after",
-				class: "header-anchor",
-				symbol: "#",
-				ariaHidden: false,
-			}),
-			level: [1,2,3,4],
-			slugify: eleventyConfig.getFilter("slugify")
+	eleventyConfig.amendLibrary("md", mdLib => {
+		mdLib.use(markdownItCheckbox, {
+			disabled: true,
+			divWrap: false,
+			divClass: 'checkbox',
+			idPrefix: 'cbx_',
+			ulClass: 'task-list',
+			liClass: 'task-list-item'
 		});
-	});*/
+	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();

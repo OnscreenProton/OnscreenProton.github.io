@@ -13,8 +13,8 @@ I'm not exactly sure why I even chose to create this page. Writing is something 
 ## TODO:
 There are many other things I should do besides what is listed here, but this is just a preliminary list.
 - [x] Convert the site to use [11ty](https://11ty.dev) and move my blog over here
-- Figure out how to set up a light/dark toggle button without using javascript.
-- Add more content (obviously)
+- [ ] Figure out how to set up a light/dark toggle button without using javascript.
+- [ ] Add more content (obviously)
 
 ## Credits
 - Thank you to [teppy](https://teppyslayouts.neocities.org/) for the wonderful layout and css. 
