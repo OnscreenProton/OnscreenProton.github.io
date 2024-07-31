@@ -12,11 +12,12 @@ I'm not exactly sure why I even chose to create this page. Writing is something 
 
 ## TODO:
 There are many other things I should do besides what is listed here, but this is just a preliminary list.
-- Convert the site to use [11ty](https://11ty.dev) and move my blog over here
+- [x] Convert the site to use [11ty](https://11ty.dev) and move my blog over here
 - Figure out how to set up a light/dark toggle button without using javascript.
 - Add more content (obviously)
 
 ## Credits
 - Thank you to [teppy](https://teppyslayouts.neocities.org/) for the wonderful layout and css. 
 - [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/) for the (somewhat unescessary) tilting function for my avatar.
+- [The example blog](https://github.com/11ty/eleventy-base-blog) which provides the framework for the new blog part of the site.
 - The [32bit Cafe](https://32bit.cafe) for providing a list to help me think about what to write.
