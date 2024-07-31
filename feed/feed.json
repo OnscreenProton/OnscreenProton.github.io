@@ -13,7 +13,7 @@
 		{
 			"id": "https://onscreenproton.github.io/blog/thirdpost/",
 			"url": "https://onscreenproton.github.io/blog/thirdpost/",
-			"title": "October Update",
+			"title": "Rewrite of blog",
 			"content_html": "<h1>Update</h1>\n<p>I think I finally got this site working with eleventy and gh-pages! It was mostly not my work since I took a lot of the site from <a href=\"https://github.com/11ty/eleventy-base-blog\">the example blog</a> and from a layout from <a href=\"https://teppyslayouts.neocities.org/\">teppy</a>, but I put some small finishing touches on my self. Hopefully I have the motivation to continue writing here, but even if I don't, I at least know this blog is mine.</p>\n",
 			"date_published": "2024-07-31T00:00:00Z"
 		}
