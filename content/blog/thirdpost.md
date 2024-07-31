@@ -1,5 +1,5 @@
 ---
-title: "October Update"
+title: "Rewrite of blog"
 date: 2024-07-31
 description: "Rewrite"
 ---
