@@ -4,12 +4,22 @@
 	<subtitle>My personal site and blog</subtitle>
 	<link href="https://onscreenproton.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://onscreenproton.github.io/"/>
-	<updated>2023-09-04T00:00:00Z</updated>
+	<updated>2024-07-31T00:00:00Z</updated>
 	<id>https://onscreenproton.github.io</id>
 	<author>
 		<name>OnscreenProton</name>
 		<email>no@example.com</email>
 	</author>
+	
+	<entry>
+		<title>October Update</title>
+		<link href="https://onscreenproton.github.io/blog/thirdpost/"/>
+		<updated>2024-07-31T00:00:00Z</updated>
+		<id>https://onscreenproton.github.io/blog/thirdpost/</id>
+		<content type="html">&lt;h1&gt;Update&lt;/h1&gt;
+&lt;p&gt;I think I finally got this site working with eleventy and gh-pages! It was mostly not my work since I took a lot of the site from &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;the example blog&lt;/a&gt; and from a layout from &lt;a href=&quot;https://teppyslayouts.neocities.org/&quot;&gt;teppy&lt;/a&gt;, but I put some small finishing touches on my self. Hopefully I have the motivation to continue writing here, but even if I don&#39;t, I at least know this blog is mine.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>October Update</title>
