@@ -13,33 +13,44 @@
 	
 	<entry>
 		<title>Rewrite of blog</title>
-		<link href="https://onscreenproton.github.io/blog/thirdpost/"/>
+		<link href="https://onscreenproton.github.io/blog/2024-07-31/"/>
 		<updated>2024-07-31T00:00:00Z</updated>
-		<id>https://onscreenproton.github.io/blog/thirdpost/</id>
-		<content type="html">&lt;h1&gt;Update&lt;/h1&gt;
-&lt;p&gt;I think I finally got this site working with eleventy and gh-pages! It was mostly not my work since I took a lot of the site from &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;the example blog&lt;/a&gt; and from a layout from &lt;a href=&quot;https://teppyslayouts.neocities.org/&quot;&gt;teppy&lt;/a&gt;, but I put some small finishing touches on my self. Hopefully I have the motivation to continue writing here, but even if I don&#39;t, I at least know this blog is mine.&lt;/p&gt;
+		<id>https://onscreenproton.github.io/blog/2024-07-31/</id>
+		<content type="html">&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;I think I finally got this site working with eleventy and gh-pages! It was mostly not my work since I took a lot of the site from &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;the Eleventy example blog&lt;/a&gt; and from a layout from &lt;a href=&quot;https://teppyslayouts.neocities.org/&quot;&gt;teppy&lt;/a&gt;, but I put some small finishing touches on my self. Hopefully I have the motivation to continue writing here, but even if I don&#39;t, I at least know this blog is mine.&lt;/p&gt;
+&lt;h2&gt;New layout&lt;/h2&gt;
+&lt;p&gt;So when I decided that I wanted to reboot this blog/personal website, I knew I wanted it to be simpler and built more from the ground up. While I orignally was going to do the whole site in vanilla HTML, CSS, and JS, I decided that if I were actually using the blog, it would be worth the effort to use a static site generator. Comparing Astro, Hugo, Jekkyl, and more, I eventually decided that I would write the site using Eleventy. Eleventy seemed relatively simple to use and to move to from just HTML. This made it easier for me to use an existing &lt;a href=&quot;https://teppyslayouts.neocities.org/04&quot;&gt;layout and theme&lt;/a&gt; that I liked.&lt;/p&gt;
+&lt;p&gt;However, it has been quite a bit since I&#39;ve written/programmed anything. I was almost dead off the water from the start. Luckily, Eleventy is quite popular and I was able to quickly learn just enough to start (although I didn&#39;t really learn much since most of this site is a copy of other&#39;s work).&lt;/p&gt;
+&lt;p&gt;Firstly, I started by converting the layout into different Nunjucks components. While I originally grappled with not changing the CSS and HTML and sticking with seperate &lt;code&gt;base.njk&lt;/code&gt; and &lt;code&gt;header.njk&lt;/code&gt;, I folded and decided that since the navigation bar was simple enough, I would just put it within &lt;code&gt;base.njk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After that, I moved the actual website content from &lt;code&gt;base.njk&lt;/code&gt; to &lt;code&gt;index.md&lt;/code&gt; so it would be easier for me to edit the home page of the site if I needed to. With this, I now had a somewhat working website. I still wanted to add more though.&lt;/p&gt;
+&lt;p&gt;While I had an existing blog, I never used it and thought that it should have a refresh while I was already working on this site. So I decided that I should also write the blog using Eleventy. This turned out to be really easy to implement since there was an existing blog &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;template&lt;/a&gt; provided by the Eleventy authors. This blog fit my needs really well; it was really simple, it supports code blocks through prismjs, and seemed pretty simple to implement into my existing site.&lt;/p&gt;
+&lt;p&gt;I still haven&#39;t flushed out all the kinks of this setup and would like to set up a few more things. I&#39;ve been trying for a while to create a simple button in the nav bar that allows changing from dark to light mode but have not been able to figure out how to do this without changing a bunch of other things. I also would like to figure out how the image templates from the example blog work so that images are better for web use. I tried to get it to work, but relative pathes kept messing me up. Finally, I would like to rewrite the parts I took from others to be my own work. It kinda feels like I&#39;m stealing by using everyone else&#39;s work.&lt;/p&gt;
+&lt;p&gt;If you&#39;re still reading this, I would like to thank you. Hopefully I&#39;ll write something else after this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OnscreenProton&lt;/li&gt;
+&lt;/ul&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>October Update</title>
-		<link href="https://onscreenproton.github.io/blog/secondpost/"/>
+		<link href="https://onscreenproton.github.io/blog/2023-09-04/"/>
 		<updated>2023-09-04T00:00:00Z</updated>
-		<id>https://onscreenproton.github.io/blog/secondpost/</id>
-		<content type="html">&lt;h1&gt;Update&lt;/h1&gt;
+		<id>https://onscreenproton.github.io/blog/2023-09-04/</id>
+		<content type="html">&lt;h2&gt;Update&lt;/h2&gt;
 &lt;p&gt;I am currently alive and well and have been working on upgrading on my vps setup. Over the past few months I&#39;ve found a few new pieces of software such as &lt;a href=&quot;https://github.com/zadam/trilium&quot;&gt;trilium notes&lt;/a&gt; and &lt;a href=&quot;https://github.com/usememos/memos&quot;&gt;memos&lt;/a&gt; that seem pretty cool. I&#39;ve also set foot into the world of federated social media with new accounts on &lt;a href=&quot;https://wetdry.world/@onscreenproton&quot;&gt;Mastodon&lt;/a&gt; and &lt;a href=&quot;https://leathallava.land/@onscreenproton&quot;&gt;lavafish&lt;/a&gt;. Both of these seem pretty interesting and I hope to stay active on both.&lt;/p&gt;
-&lt;p&gt;That&#39;s pretty much it for now and I hope to have something else to put here sometime soon. I&#39;m just thinking about what else I should put here&lt;/p&gt;
+&lt;p&gt;That&#39;s pretty much it for now and I hope to have something else to put here sometime soon. I&#39;m just thinking about what else I should put here.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>Hello World</title>
-		<link href="https://onscreenproton.github.io/blog/firstpost/"/>
+		<link href="https://onscreenproton.github.io/blog/2023-06-06/"/>
 		<updated>2023-06-06T00:00:00Z</updated>
-		<id>https://onscreenproton.github.io/blog/firstpost/</id>
+		<id>https://onscreenproton.github.io/blog/2023-06-06/</id>
 		<content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This is just a hello world post on this, I hope that this stays actively maintained by me but it probaly won&#39;t. I rebooted this for no reason other than I felt like it. I&#39;m not really sure what I&#39;ll put here, but I guess I&#39;ll find out later. As I wrote in my intro thing for this site, I don&#39;t really know a ton about programming at all, but maybe I&#39;ll have motivation to learn more if I find a project I want to work on.&lt;/p&gt;
-&lt;h2&gt;Misc.&lt;/h2&gt;
+&lt;h2&gt;Misc&lt;/h2&gt;
 &lt;p&gt;If you are going to contact me, I&#39;m not really active on any platform other than Discord, so that would be perfered.&lt;/p&gt;
 </content>
 	</entry>
