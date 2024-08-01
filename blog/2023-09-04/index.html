@@ -182,42 +182,32 @@ pre[class*="language-"] {
 
 :root {
 	color-scheme: light dark;
+	--text: #0b0b08;
+	--wrapper-background: #fff;
+	--background-size: 32px;
+	--background-1: #a6a6a6;
+	--background-2: #e7e7e7;
+	--background-3: #f3f3f3;
 }
 
 @media (prefers-color-scheme: light) {
-  body, html {
-    color: #0b0b08;
-  }
-
-  h1::after {
-    background: #0b0b08
-  }
-
-  body {
-    background-image: url('/img/light.png');
-  }
-
-  .wrapper {
-    background: #fff;
-  }
+	:root {
+		--text: #0b0b08;
+		--wrapper-background: #fff;
+		--background-1: #a6a6a6;
+		--background-2: #e7e7e7;
+		--background-3: #f3f3f3;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-  body, html {
-    color: #fff;
-  }
-
-  h1::after {
-    background: #fff
-  }
-
-  body {
-    background-image: url('/img/dark.jpg');
-  }
-
-  .wrapper {
-    background: #161617;
-  }
+	:root {
+		--text: #fff;
+		--wrapper-background: #161617;
+		--background-1: #111111;
+		--background-2: #2b2b2b;
+		--background-3: #363636;
+	}
 }
 
 body, html {
@@ -225,10 +215,20 @@ body, html {
 	margin: 0;
 	font-size: 16px;
 	line-height: 1.5rem;
+	color: var(--text);
+}
+
+html {
+	background:
+		repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--background-3) 0 180deg) 
+		 calc(.5*var(--background-size)) calc(.5*var(--background-size)*0.577),
+		repeating-conic-gradient(from 30deg,var(--background-1) 0 60deg,var(--background-2) 0 120deg,var(--background-3) 0 180deg);
+	background-size: var(--background-size) calc(var(--background-size)*0.577);
 }
 
 body {
 	font-family: 'Source Serif Pro', serif;
+
 }
 
 img {
@@ -247,6 +247,7 @@ h1::after {
 	height: 3px;
 	display: block;
 	margin-top: 24px;
+	background: var(--text);
 }
 
 .page {
@@ -305,6 +306,7 @@ a {
 	border-radius: 5px;
 	margin-bottom: 120px;
 	padding-bottom: 120px;
+	background: var(--wrapper-background);
 }
 
 pre,
@@ -418,7 +420,7 @@ code {
 	<div class="wrapper">
 		<div class="top">
 			<div class="header-body">
-			<img src="/img/avatar.jpg" class="avatar" alt="picture of cat" data-tilt data-tilt-scale="1.1">
+			<img src="/img/avatar.webp" class="avatar" alt="picture of cat" data-tilt data-tilt-scale="1.1">
 			<div class="title">OnscreenProton</div>
 			<nav>
 				<ul class="nav">
