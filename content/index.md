@@ -18,6 +18,7 @@ There are many other things I should do besides what is listed here, but this is
 
 - [x] Convert the site to use [11ty](https://11ty.dev) and move my blog over here
 - [ ] Figure out how to set up a light/dark toggle button without using javascript.
+- [ ] Shrink the site even more! I think I've gotten it down to less than 40kb on each page and 250kb for the site as a whole, but think I can go even further.
 - [ ] Add more content (obviously)
 
 ## Credits
