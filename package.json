@@ -20,5 +20,8 @@
     "luxon": "^3.4.4",
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-task-checkbox": "^1.0.6"
+  },
+  "dependencies": {
+    "markdown-it-checkbox": "^1.1.0"
   }
 }
