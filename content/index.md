@@ -26,4 +26,5 @@ There are many other things I should do besides what is listed here, but this is
 - Thank you to [teppy](https://teppyslayouts.neocities.org/) for the wonderful layout and css.
 - [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/) for the (somewhat unescessary) tilting function for my avatar.
 - [The example blog](https://github.com/11ty/eleventy-base-blog) which provides the framework for the new blog part of the site.
+- [CSS Pattern](https://css-pattern.com/) for the silly background so my site is not so boring.
 - The [32bit Cafe](https://32bit.cafe) for providing a list to help me think about what to write.

@@ -5,7 +5,18 @@ eleventyNavigation:
   order: 3
 ---
 
-# You can find me here
+# Links
+
+My button:
+
+[{% image "public/img/onsc-button.png", "my button" %}](https://onscreenproton.github.io)
+
+## Buttons
+
+Let me know if you want something here
+
+## You can find me here
+
 (not that I will be super active on any of these)
 
 - [Twitter](https://twitter.com/onscreenproton)

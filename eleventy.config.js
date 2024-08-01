@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-const markdownItCheckbox = require("markdown-it-checkbox");
+const markdownItTaskLists = require("markdown-it-task-lists");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -81,7 +81,7 @@ module.exports = function(eleventyConfig) {
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
-		mdLib.use(markdownItCheckbox);
+		mdLib.use(markdownItTaskLists);
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
