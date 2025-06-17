@@ -3,8 +3,8 @@
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>OnscreenProton</title>
-		<meta name="description" content="My personal site and blog">
+		<title>My Situation</title>
+		<meta name="description" content="My current situation and future plans">
 
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="OnscreenProton">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="OnscreenProton">
@@ -257,7 +257,174 @@ code {
 .post-metadata time {
 	margin-right: 1em;
 }
-.postlist { counter-reset: start-from 5 }</style>
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+ pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -268,7 +435,7 @@ code {
 			<nav>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Blog</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/links/">Links</a></li>
 					<li class="nav-item">
 						<input type="checkbox" id="theme-switcher" class="theme-switcher">
@@ -317,11 +484,7 @@ code {
 			</div>
 		</div>
 		<div class="main">
-			<h1>Blog</h1>
-<p>Subscribe to <a href="/feed/feed.xml">RSS</a> or <a href="/feed/feed.json">JSON</a></p>
-
-
-
+			
 <style>@import url('https://fonts.googleapis.com/css?family=Source Serif Pro');
 
 :root {
@@ -569,30 +732,191 @@ code {
 .post-metadata time {
 	margin-right: 1em;
 }
-.postlist { counter-reset: start-from 5 }</style>
-<ol reversed class="postlist">
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
 
-	<li class="postlist-item">
-		<a href="/blog/2025-06-16/" class="postlist-link">My Situation</a>
-		<time class="postlist-date" datetime="2025-06-16">June 2025</time>
-	</li>
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
 
-	<li class="postlist-item">
-		<a href="/blog/2024-07-31/" class="postlist-link">Rewrite of blog</a>
-		<time class="postlist-date" datetime="2024-07-31">July 2024</time>
-	</li>
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-	<li class="postlist-item">
-		<a href="/blog/2023-09-04/" class="postlist-link">October Update</a>
-		<time class="postlist-date" datetime="2023-09-04">September 2023</time>
-	</li>
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
 
-	<li class="postlist-item">
-		<a href="/blog/2023-06-06/" class="postlist-link">Hello World</a>
-		<time class="postlist-date" datetime="2023-06-06">June 2023</time>
-	</li>
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
 
-</ol>
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+ pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+
+<h1>My Situation</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-06-16">16 June 2025</time></li>
+</ul>
+
+<h2>Where am I now?</h2>
+<p>First and foremost, I must apologize for going radio silent for what ended up being a year. I admittedly struggled a bit getting used to college, but it turned out that I found it easier and less time consuming than high school after a bit. I'm still not sure why this is, since I didn't find high school especially hard, but I found myself with a lot of free time back then. Although, for my second semester, I took a somewhat heavy courseload and had less freetime to do other stuff.</p>
+<h2>What have I done?</h2>
+<p>I haven't really done too much besides school clubs since I first started. I've honestly been really bored and constantly wished there was something more captivating to put my mind to. Hopefully that can be this blog! I don't really remember much about how I wrote this or where I stole stuff from, but I hope to have this blog serve as a small creative outlet.</p>
+<h2>Future plans?</h2>
+<p>I hope to learn more programming languages in addition to exploring 中文. Python for one would be quite useful to me not just for personal projects but also for school related tasks. Also, I constantly use Julia to mess around and calculate one-off things in the REPL. Maybe it would come in handy too?</p>
+<p>I'm not super sure what the future has for me, but hopefully it is fun!</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2024-07-31/">Rewrite of blog</a></li>
+</ul>
 		</div>
 	</div>
 </body>

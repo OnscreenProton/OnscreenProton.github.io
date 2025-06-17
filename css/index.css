@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source Serif Pro');
 
 :root {
 	color-scheme: light dark;
@@ -10,24 +10,34 @@
 	--background-3: #f3f3f3;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--text: #0b0b08;
-		--wrapper-background: #fff;
-		--background-1: #a6a6a6;
-		--background-2: #e7e7e7;
-		--background-3: #f3f3f3;
-	}
+html.dark-theme {
+	--text: #fff;
+	--wrapper-background: #161617;
+	--background-1: #111111;
+	--background-2: #2b2b2b;
+	--background-3: #363636;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--text: #fff;
-		--wrapper-background: #161617;
-		--background-1: #111111;
-		--background-2: #2b2b2b;
-		--background-3: #363636;
-	}
+.theme-switcher {
+	display: none;
+}
+
+.theme-toggle-label {
+	cursor: pointer;
+	color: #4b77a6;
+	user-select: none;
+}
+
+.theme-toggle-label::after {
+	content: '☀️';
+	display: inline-block;
+	font-size: 1.1em;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+html.dark-theme .theme-toggle-label::after {
+	content: '🌙';
 }
 
 body, html {
@@ -48,7 +58,6 @@ html {
 
 body {
 	font-family: 'Source Serif Pro', serif;
-
 }
 
 img {
@@ -162,6 +171,7 @@ code {
 	display: inline-block;
 	justify-content: center;
 	margin-inline: 0.5em;
+	user-select: none;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;

@@ -4,12 +4,27 @@
 	<subtitle>My personal site and blog</subtitle>
 	<link href="https://onscreenproton.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://onscreenproton.github.io/"/>
-	<updated>2024-07-31T00:00:00Z</updated>
+	<updated>2025-06-16T00:00:00Z</updated>
 	<id>https://onscreenproton.github.io</id>
 	<author>
 		<name>OnscreenProton</name>
 		<email>no@example.com</email>
 	</author>
+	
+	<entry>
+		<title>My Situation</title>
+		<link href="https://onscreenproton.github.io/blog/2025-06-16/"/>
+		<updated>2025-06-16T00:00:00Z</updated>
+		<id>https://onscreenproton.github.io/blog/2025-06-16/</id>
+		<content type="html">&lt;h2&gt;Where am I now?&lt;/h2&gt;
+&lt;p&gt;First and foremost, I must apologize for going radio silent for what ended up being a year. I admittedly struggled a bit getting used to college, but it turned out that I found it easier and less time consuming than high school after a bit. I&#39;m still not sure why this is, since I didn&#39;t find high school especially hard, but I found myself with a lot of free time back then. Although, for my second semester, I took a somewhat heavy courseload and had less freetime to do other stuff.&lt;/p&gt;
+&lt;h2&gt;What have I done?&lt;/h2&gt;
+&lt;p&gt;I haven&#39;t really done too much besides school clubs since I first started. I&#39;ve honestly been really bored and constantly wished there was something more captivating to put my mind to. Hopefully that can be this blog! I don&#39;t really remember much about how I wrote this or where I stole stuff from, but I hope to have this blog serve as a small creative outlet.&lt;/p&gt;
+&lt;h2&gt;Future plans?&lt;/h2&gt;
+&lt;p&gt;I hope to learn more programming languages in addition to exploring 中文. Python for one would be quite useful to me not just for personal projects but also for school related tasks. Also, I constantly use Julia to mess around and calculate one-off things in the REPL. Maybe it would come in handy too?&lt;/p&gt;
+&lt;p&gt;I&#39;m not super sure what the future has for me, but hopefully it is fun!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Rewrite of blog</title>
@@ -26,9 +41,7 @@
 &lt;p&gt;While I had an existing blog, I never used it and thought that it should have a refresh while I was already working on this site. So I decided that I should also write the blog using Eleventy. This turned out to be really easy to implement since there was an existing blog &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;template&lt;/a&gt; provided by the Eleventy authors. This blog fit my needs really well; it was really simple, it supports code blocks through prismjs, and seemed pretty simple to implement into my existing site.&lt;/p&gt;
 &lt;p&gt;I still haven&#39;t flushed out all the kinks of this setup and would like to set up a few more things. I&#39;ve been trying for a while to create a simple button in the nav bar that allows changing from dark to light mode but have not been able to figure out how to do this without changing a bunch of other things. I also would like to figure out how the image templates from the example blog work so that images are better for web use. I tried to get it to work, but relative pathes kept messing me up. Finally, I would like to rewrite the parts I took from others to be my own work. It kinda feels like I&#39;m stealing by using everyone else&#39;s work.&lt;/p&gt;
 &lt;p&gt;If you&#39;re still reading this, I would like to thank you. Hopefully I&#39;ll write something else after this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OnscreenProton&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;OnscreenProton&lt;/p&gt;
 </content>
 	</entry>
 	
