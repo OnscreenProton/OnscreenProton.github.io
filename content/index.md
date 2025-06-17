@@ -17,8 +17,10 @@ I'm not exactly sure why I even chose to create this page. Writing is something 
 There are many other things I should do besides what is listed here, but this is just a preliminary list.
 
 - [x] Convert the site to use [11ty](https://11ty.dev) and move my blog over here
-- [ ] Figure out how to set up a light/dark toggle button without using javascript.
+- [x] Figure out how to set up a light/dark toggle button without using JavaScript.
+  - I couldn't ever figure out how to do this without JavaScript, but am fine with it using JavaScript now.
 - [ ] Shrink the site even more! I think I've gotten it down to less than 40kb on each page and 250kb for the site as a whole, but think I can go even further.
+- [ ] Improve accessibility features of the site and implement a responsive UI too
 - [ ] Add more content (obviously)
 
 ## Credits

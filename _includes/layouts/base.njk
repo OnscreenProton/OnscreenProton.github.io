@@ -25,9 +25,14 @@
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
+					<li class="nav-item">
+						<input type="checkbox" id="theme-switcher" class="theme-switcher">
+						<label for="theme-switcher" class="theme-toggle-label">Toggle Theme</label>
+					</li>
 				</ul>
 			</nav>
   		<script type="text/javascript">{% include "public/js/vanilla-tilt.js" %}</script>
+			<script type="text/javascript">{% include "public/js/theme.js" %}</script>
 			</div>
 		</div>
 		<div class="main">

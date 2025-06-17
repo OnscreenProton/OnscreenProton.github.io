@@ -1,3 +1,5 @@
+{%- css %}{% include "public/css/index.css" %}{% endcss %}
+<style>{% getBundle "css" %}</style>
 {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
 <ol reversed class="postlist">
 {% for post in postslist | reverse %}
