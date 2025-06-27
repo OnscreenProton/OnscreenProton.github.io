@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://onscreenproton.github.io/blog/2025-06-27/",
+			"url": "https://onscreenproton.github.io/blog/2025-06-27/",
+			"title": "Media Consumption",
+			"content_html": "<p>Hi again, this post may seem somewhat random, but I just wanted to write an entry about what I've been reading/listening too recently.</p>\n<h2>Reading</h2>\n<p>While I in the past would have frowned down upon myself reading &quot;self help books&quot;, I recently picked up <em>Dopamine Nation</em> and thought that it was quite a good read. This is going to sound very generic, but I thought that the book gave me another perspective on things that I may have thought about once or twice, but never really given much thought to. Through the whole book, I was drawn in and enjoyed reading the small personal anecdotes from both Lembke and her patients. Although I know that many of the stories were likely cherrypicked to weave the certain narrative that Lembke wanted to put forth, I thought that they all swayed me in a good way.</p>\n<h2>Music</h2>\n<p>In addition to reading, I've also been listening to music a bit more recently. So far, I've been getting back into music I used to enjoy which includes some j-jazz and other electronic/dance stuff. An album I found recently was <em>Tickle the Ivory</em> by Minoru Mukaiya who was the keyboardist for Casiopea. I <em><strong>REALLY</strong></em> enjoyed this album. Some of my favorite songs within it on my first run through were <em>Long Term Memory</em>, <em>Asayake</em>, and <em>Reflections of You</em>. I found that each of these songs were fun and quite playful and I enjoyed listening to them.</p>\n<p>Besides chilling out and relaxing, I've not really been doing too much. Although, one thing I did do which took a while was reorganizing my homelab and moving my services from a VM running docker to individual LXCs. This allows me more control (although probably less separation), and allows me to segment them within the network.</p>\n<p>Thanks for reading,</p>\n<p>- OnscreenProton</p>\n",
+			"date_published": "2025-06-27T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://onscreenproton.github.io/blog/2025-06-16/",
 			"url": "https://onscreenproton.github.io/blog/2025-06-16/",
 			"title": "My Situation",
